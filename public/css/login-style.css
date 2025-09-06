@@ -1,0 +1,211 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f5f9;
+}
+
+/* Container for the Main Page */
+.container {
+  text-align: center;
+}
+
+.institute-name {
+  font-size: 36px;
+  color: #f8fafc;
+  margin-bottom: 10px;
+}
+
+.institute-tagline {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Remove underline from anchor tags around buttons */
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+button {
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 140px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Button Color Themes */
+.student-btn {
+  background-color: #0ea5e9; /* Sky Blue */
+}
+
+.teacher-btn {
+  background-color: #f59e0b; /* Amber */
+}
+
+.admin-btn {
+  background-color: #ec4899; /* Pink */
+}
+
+/* Extra Buttons at the Bottom */
+.extra-buttons {
+  margin-top: 40px;
+}
+
+.extra-buttons button {
+  padding: 8px 16px; /* Smaller padding for the less important buttons */
+  font-size: 12px; /* Smaller font size */
+  margin: 5px;
+  background-color: transparent;
+  color: #94a3b8;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.extra-buttons button i {
+  margin-right: 6px;
+  font-size: 14px; /* Smaller icon size */
+}
+
+.extra-buttons button:hover {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+.extra-buttons button:active {
+  color: #0c85b0;
+}
+
+/* Login Page Styling */
+.login-box {
+  background-color: #1e293b;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-icon {
+  font-size: 50px;
+  color: #0ea5e9;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #f8fafc;
+  font-size: 28px;
+}
+
+.input-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #334155;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin-top: 8px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 15px;
+  top: -8px;
+  font-size: 14px;
+  color: #94a3b8;
+  background-color: #1e293b;
+  padding: 0 5px;
+}
+
+.forgot-link {
+  display: block;
+  color: #94a3b8;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  color: #0ea5e9;
+}
+
+button.login-btn {
+  background-color: #0ea5e9;
+  padding: 14px 24px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+button.login-btn:hover {
+  background-color: #0c85b0;
+}
+
+.message {
+  color: #4ade80;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .button-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .institute-name {
+    font-size: 30px;
+  }
+  a {
+    text-decoration: none;
+  }
+}

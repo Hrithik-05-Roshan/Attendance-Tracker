@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Visionary Institute - Login Portal</title>
+  <link rel="stylesheet" href="/css/login-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="institute-name">The Visionary Institute</h1>
+    <p class="institute-tagline">"Think Outside the Classroom, Embrace Education"</p>
+
+    <div class="button-row">
+      <a href="/student"><button class="student-btn"><i class="fas fa-user-graduate"></i> Student </button></a>
+      <a href="/teacher"><button class="teacher-btn"><i class="fas fa-chalkboard-teacher"></i> Teacher </button></a>
+      <a href="/admin"><button class="admin-btn"><i class="fas fa-user-shield"></i> Admin </button></a>
+    </div>
+
+    <!-- Less important buttons styled as text -->
+    <div class="extra-buttons">
+      <!-- <button class="extra-btn"><i class="fas fa-info-circle"></i> About Us</button> -->
+      <!-- <button class="extra-btn"><i class="fas fa-phone-alt"></i> Contact Us</button> -->
+      <button class="extra-btn"><i class="fab fa-facebook"></i> Facebook</button>
+      <button class="extra-btn"><i class="fab fa-instagram"></i> Instagram</button>
+      <a href="about-us.html"><button class="extra-btn"><i class="fas fa-info-circle"></i> About Us</button></a>
+      <button onclick="openContactUsWindow()">Contact Us</button>
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <!-- In your index.html file -->
+
+<script>
+    function openContactUsWindow() {
+        window.open("contact.html", "ContactUsWindow", "width=600, height=400, top=100, left=100, resizable=yes");
+    }
+</script>
+
+</body>
+</html>

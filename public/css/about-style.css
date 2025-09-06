@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #6a1b9a; /* Dark Purple */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+    font-weight: 700;
+}
+
+section {
+    padding: 40px 20px; /* Reduced padding */
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px; /* Reduced margin */
+    background-color: #7e57c2; /* Light Purple */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feedback-carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: #f4f4f4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: auto;
+}
+
+.feedback-carousel .feedback {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.feedback-carousel img {
+    width: 60px; /* Fixed size */
+    height: 60px; /* Fixed size */
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.feedback-carousel .feedback.active {
+    opacity: 1;
+}
+
+.feedback-carousel .name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.infrastructure-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.infrastructure-images img {
+    width: 32%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.infrastructure-images img:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #6a1b9a; /* Dark Purple */
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #7e57c2; /* Light Purple */
+}
+
+.course-curriculum, .infrastructure, .feedback {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.course-curriculum.visible, .infrastructure.visible, .feedback.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.thank-you {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    margin-top: 40px;
+}

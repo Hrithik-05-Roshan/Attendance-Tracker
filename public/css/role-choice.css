@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.role-container {
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.role-container h1 {
+  font-size: 2.5rem;
+  color: #ff9900;
+  margin-bottom: 40px;
+}
+
+.role-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.role-btn {
+  background: linear-gradient(45deg, #ff4e00, #ff9900);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 153, 0, 0.4);
+}
+
+.login {
+  background: linear-gradient(45deg, #1e90ff, #00bfff);
+}
+
+.signup {
+  background: linear-gradient(45deg, #28a745, #55dd75);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - The Visionary Institute</title>
+  <link rel="stylesheet" href="css/dashboard-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <h1 class="dashboard-heading">Welcome to the Dashboard</h1>
+    <p class="login-role">You're logged in as <span class="role-label">Admin</span></p>
+
+    <div class="dashboard-menu">
+      <button class="menu-btn manage-btn" onclick="location.href='manage-teachers.html'">
+        <i class="fas fa-chalkboard-teacher"></i> Manage Teachers
+      </button>
+      <button class="menu-btn manage-btn" onclick="location.href='manage-students.html'">
+        <i class="fas fa-user-graduate"></i> Manage Students
+      </button>
+      <button class="menu-btn manage-btn" onclick="location.href='manage-courses.html'">
+        <i class="fas fa-book"></i> Manage Courses
+      </button>
+      <button class="menu-btn reports-btn" onclick="location.href='admin-reports.html'">
+        <i class="fas fa-chart-bar"></i> Reports & Analytics
+      </button>
+      <button class="menu-btn events-btn" onclick="location.href='event-management.html'">
+        <i class="fas fa-calendar-plus"></i> Event Management
+      </button>
+      <button class="menu-btn settings-btn" onclick="location.href='settings.html'">
+        <i class="fas fa-user-cog"></i> Admin Settings
+      </button>
+    </div>
+
+    <a href="index.html">
+      <button class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </a>
+  </div>
+
+  <script src="js/dashboard-script.js"></script>
+</body>
+</html>

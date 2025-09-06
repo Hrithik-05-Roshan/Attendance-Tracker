@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Signup - The Visionary Institute</title>
+  <link rel="stylesheet" href="css/signup-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="login-box">
+    <i class="fas fa-user-shield login-icon"></i>
+    <h2>Admin Sign-Up</h2>
+    <form id="adminSignupForm">
+      <div class="form-grid">
+        <div class="input-group">
+          <input type="text" id="fullName" required>
+          <label>Full Name</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="adminId" required>
+          <label>Admin ID</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-group">
+          <input type="tel" id="phone" required>
+          <label>Phone Number</label>
+        </div>
+        <div class="input-group">
+          <input type="file" accept="image/*" required>
+          <label style="top: -24px;">Upload Profile Picture</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" required oninput="checkPasswordStrength()">
+          <label>Password</label>
+          <div id="strengthIndicator" style="margin-top: 8px; height: 8px; border-radius: 5px; width: 100%; background-color: #475569;"></div>
+        </div>
+        <div class="input-group">
+          <input type="password" required>
+          <label>Confirm Password</label>
+        </div>
+      </div>
+      <button type="submit" class="login-btn">Register</button>
+    </form>
+    <p>Already registered? <a href="admin-login.html" class="forgot-link">Login here</a></p>
+  </div>
+
+  <script src="js/signup-script.js"></script>
+</body>
+</html>

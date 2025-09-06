@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Dashboard - The Visionary Institute</title>
+  <link rel="stylesheet" href="css/dashboard-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <h1 class="dashboard-heading">Welcome to the Teachers Room</h1>
+    <p class="login-role">You're logged in as <span class="role-label">Teacher</span></p>
+
+    <!-- Dashboard Menu -->
+    <div class="dashboard-menu">
+      <button class="menu-btn attendance-btn" onclick="location.href='mark-attendance.html'">
+        <i class="fas fa-clipboard-check"></i> Mark Attendance
+      </button>
+      <button class="menu-btn courses-btn" onclick="location.href='upload-materials.html'">
+        <i class="fas fa-upload"></i> Upload Materials
+      </button>
+      <button class="menu-btn reports-btn" onclick="location.href='upload-marks.html'">
+        <i class="fas fa-pen"></i> Upload Marks
+      </button>
+      <button class="menu-btn settings-btn" onclick="location.href='teacher-settings.html'">
+        <i class="fas fa-user-cog"></i> Account Settings
+      </button>
+      <button class="menu-btn events-btn" onclick="location.href='upcoming-events.html'">
+        <i class="fas fa-calendar-day"></i> Upcoming Events
+      </button>
+    </div>
+
+    <!-- Pending Student Approvals -->
+    <div class="approval-panel">
+      <h2><i class="fas fa-user-clock"></i> Pending Student Approvals</h2>
+      <ul id="pendingList"></ul>
+    </div>
+
+    <!-- Logout -->
+    <a href="index.html">
+      <button class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </a>
+  </div>
+
+  <!-- Script to handle pending approvals -->
+  <script src="js/dashboard-script.js"></script>
+</body>
+</html>

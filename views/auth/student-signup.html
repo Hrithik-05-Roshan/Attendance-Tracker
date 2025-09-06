@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Signup - The Visionary Institute</title>
+    <link rel="stylesheet" href="css/signup-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <i class="fas fa-user-graduate login-icon"></i>
+      <h2>Student Sign-Up</h2>
+
+      <form id="signupForm" method="POST" action="/student-signup">
+        <div class="input-group">
+          <input type="text" id="fullName" name="fullName" required />
+          <label>Full Name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="studentId" name="studentId" required />
+          <label>Student ID</label>
+        </div>
+
+        <div class="input-group">
+          <input type="date" id="dob" name="dob" required />
+          <label style="top: -24px">Date of Birth</label>
+        </div>
+
+        <div class="input-group">
+          <select id="gender" name="gender" required>
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="whatsapp" name="whatsapp" required />
+          <label>WhatsApp Number</label>
+        </div>
+
+        <div class="input-group full-width">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            oninput="checkPasswordStrength()"
+          />
+          <label>Password</label>
+          <div
+            id="strengthIndicator"
+            style="
+              margin-top: 8px;
+              height: 8px;
+              border-radius: 5px;
+              width: 100%;
+              background-color: #475569;
+            "
+          ></div>
+        </div>
+
+        <div class="input-group full-width">
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+          <label>Confirm Password</label>
+        </div>
+
+        <button type="submit" class="login-btn">Apply</button>
+      </form>
+
+      <p>
+        Already registered?
+        <a href="/student-login" class="forgot-link">Login here</a>
+      </p>
+    </div>
+
+    <script src="js/student-signup-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Container */
+.contact-container {
+    background-color: #333;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff9900;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    color: #ff9900;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

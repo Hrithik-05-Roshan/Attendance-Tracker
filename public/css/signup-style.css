@@ -1,0 +1,214 @@
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f5f9;
+}
+
+/* SIGNUP BOX */
+.login-box {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  width: 800px; /* fixed wide box */
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.6s ease;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.login-icon {
+  font-size: 45px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+/* FORM GRID (2 COLUMNS always) */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid .input-group {
+  margin-bottom: 20px;
+}
+
+/* INPUT GROUPS */
+.input-group {
+  position: relative;
+  text-align: left;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #475569;
+  color: #f1f5f9;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-bottom-color: #38bdf8;
+}
+
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #94a3b8;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* Floating label for text/email/password */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+  color: #38bdf8;
+}
+
+/* FIX for Date, File, and Select fields */
+.input-group input[type="date"],
+.input-group input[type="file"],
+.input-group select {
+  color: #f1f5f9;
+  font-size: 14px;
+  padding: 12px 10px;
+}
+
+/* Labels always above for these fields */
+.input-group input[type="date"] ~ label,
+.input-group input[type="file"] ~ label,
+.input-group select ~ label {
+  position: static;
+  font-size: 13px;
+  color: #cbd5e1;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Dropdown Styling */
+.input-group select {
+  background: #1e293b;
+  border: 2px solid #475569;
+  border-radius: 6px;
+  appearance: none;
+  cursor: pointer;
+  padding-right: 35px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+/* File Input Styling */
+.input-group input[type="file"] {
+  border: none;
+  background: transparent;
+  padding: 5px 0;
+}
+
+/* OTP GROUP */
+.otp-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.otp-btn {
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 10px 14px;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.otp-btn:hover {
+  background: #0ea5e9;
+  color: white;
+}
+
+/* FULL WIDTH INPUTS */
+.full-width {
+  grid-column: span 2;
+}
+
+.full-width input {
+  width: 100%;
+}
+
+/* SUBMIT BUTTON */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #10b981;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #059669;
+  transform: scale(1.02);
+}
+
+/* LINKS */
+.forgot-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* POPUP ALERTS */
+.alert {
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #334155;
+  color: #f1f5f9;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

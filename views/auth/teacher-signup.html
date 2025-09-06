@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Signup - The Visionary Institute</title>
+  <link rel="stylesheet" href="css/signup-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="login-box">
+    <i class="fas fa-chalkboard-teacher login-icon"></i>
+    <h2>Teacher Sign-Up</h2>
+
+    <form id="signupForm" method="POST" action="/teacher-signup">
+
+      <div class="input-group">
+        <input type="text" name="fullName" required>
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" name="teacherId" required>
+        <label>Teacher ID</label>
+      </div>
+
+      <div class="input-group">
+        <select name="gender" required>
+          <option value="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <input type="text" name="whatsapp" required>
+        <label>WhatsApp Number</label>
+      </div>
+
+      <div class="input-group full-width">
+        <input type="password" name="password" id="password" required oninput="checkPasswordStrength()">
+        <label>Password</label>
+        <div id="strengthIndicator" style="margin-top: 8px; height: 8px; border-radius: 5px; width: 100%; background-color: #475569;"></div>
+      </div>
+
+      <div class="input-group full-width">
+        <input type="password" name="confirmPassword" required>
+        <label>Confirm Password</label>
+      </div>
+
+      <button type="submit" class="login-btn">Register</button>
+    </form>
+
+    <p>Already registered? <a href="/teacher-login" class="forgot-link">Login here</a></p>
+  </div>
+
+  <script src="js/signup-script.js"></script>
+</body>
+</html>

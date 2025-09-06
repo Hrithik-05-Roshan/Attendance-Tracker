@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f5f9;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.menu-btn {
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 200px;
+  margin: 10px 0;
+  color: white;
+  background: linear-gradient(45deg, #06b6d4, #0ea5e9);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-btn:hover {
+  transform: scale(1.05);
+}
+
+.logout-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0ea5e9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Light Mode */
+body.light-mode {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  color: #0f172a;
+}
+
+body.light-mode .menu-btn {
+  background: linear-gradient(45deg, #0284c7, #38bdf8);
+}
+
+body.light-mode .logout-btn {
+  background: #7f1d1d;
+}
+
+body.light-mode .logout-btn:hover {
+  background: #991b1b;
+}
