@@ -34,20 +34,35 @@ Welcome to **Smart Attendance System**—your next-level QR-based attendance tra
 
 ---
 
-## Built With
-
-- **Server:** Node.js + Express  
-- **Database:** MongoDB with Mongoose  
-- **Frontend:** HTML, CSS, JavaScript (EJS for templating, if applicable)  
+## 🛠 Tech Stack  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Design Tools:** Figma, VS Code  
+- **Version Control:** Git & GitHub  
+- **(Future Backend):** Node.js, Express.js, MongoDB  
 
 ---
 
-## Features
+## ✨ Features  
 
-- **Role-based access** – Student, Teacher, and Admin accounts  
-- **QR Code magic** – Generate and scan codes to mark attendance in a flash  
-- **Auto-mark system** – QR scanning hooks into backend to log attendance seamlessly  
-- **Dashboards** – Personalized views for students and teachers to check attendance  
+- 👨‍🎓 **Student Dashboard** → View attendance, courses, and update profile.  
+- 👩‍🏫 **Teacher Dashboard** → Approve student sign-ups, mark attendance, upload marks.  
+- 🛠️ **Admin Dashboard** → Manage teachers, students, and institute data.  
+- 🔒 **Secure Login & Signup** with OTP verification.  
+- 🌙 **Dark Mode Toggle** for better user experience.  
+- 🎨 **Animated UI/UX** with icons and smooth transitions.  
+- ✅ **Approval System** → Only approved students can log in.  
+
+---
+
+## 📂 Project Structure  
+
+Smart-Attendance-Tracker/
+│── index.html # Main landing page
+│── css/ # Stylesheets
+│── js/ # JavaScript files
+│── pages/ # Login, Signup, Dashboards
+│── images/ # Icons & assets
+│── README.md # Documentation
 
 ---
 
@@ -62,3 +77,4 @@ Welcome to **Smart Attendance System**—your next-level QR-based attendance tra
 **Clone the Repo**  
 ```bash
 git clone https://github.com/Hrithik-05-Roshan/Attendance-Tracker.git
+
